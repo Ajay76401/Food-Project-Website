@@ -1,0 +1,250 @@
+@media screen and (max-width: 1161px) {
+
+    .hero-text-box {
+        width: 100%;
+        padding: 0 6%;
+    }
+
+    .section-meals {
+
+        padding: 0;
+        margin: 0;
+        /* padding-top: 20px; */
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .step-box {
+        margin-top: 10px;
+    }
+
+    .step-box:last-child {
+        margin-top: 10px;
+    }
+
+    .work-step {
+        margin-bottom: 40px;
+    }
+
+    .works-step:last-of-type {
+        margin-bottom: 40px;
+    }
+
+    .app-screen {
+        width: 60%;
+    }
+
+    .btn-app img {
+        height: 50px !important;
+        margin-top: 1rem;
+        margin-right: 10px;
+
+    }
+
+    .icon-small {
+        width: 17px;
+        margin-left: 5px;
+    }
+
+    .city-features {
+        font-size: 90%;
+    }
+
+    .plan-box {
+        width: 100%;
+        margin-left: 0;
+        border: 1px solid rgba(152, 152, 152, 0.779);
+        margin-bottom: 20px;
+    }
+
+    .plan-price {
+        font-size: 250%;
+    }
+
+    .section-form {
+        margin-top: -4rem;
+    }
+
+
+}
+
+@media screen and (max-width: 821px) {
+    /* body {
+        font-size: 16px !important;
+    } */
+
+    .section-features .row .col {
+
+        width: 100%;
+        margin: 0 2% 0% 2%;
+    }
+
+    .long-copy {
+        width: 90%;
+
+        text-align: center;
+    }
+
+    .footer-nav li,
+    .social-links li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .section-form {
+        margin-top: -4rem;
+    }
+
+    .plan-box-div .btn {
+        width: 8rem;
+    }
+
+    .app-screen {
+        width: 80%;
+    }
+
+    .btn-app img {
+        height: 50px;
+    }
+
+    .main-nav {
+        margin-left: 10px;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 785px) {
+    .main-nav {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+    body {
+        font-size: 16px !important;
+    }
+
+    .app-screen {
+        text-align: center;
+    }
+
+    .btn-app {
+        text-align: center;
+    }
+
+    .col {
+        width: 100%;
+        margin: 0 10% 4% 2%;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .contact-form {
+        width: 80%;
+
+    }
+
+    .hero-text-box {
+        font-size: 80%;
+    }
+
+    .hero-text-box .btn-ghost {
+        margin-top: 20px;
+    }
+
+    .section-testimonials {
+        margin-top: 90rem;
+        height: 40rem;
+    }
+
+    .section-form {
+
+        margin-top: 25rem;
+        margin-bottom: 15rem;
+    }
+
+    .section-features {
+        padding-bottom: 47rem;
+    }
+
+    .section-steps {
+        padding-bottom: 50rem
+    }
+
+    .box h3 {
+        font-size: 150%;
+        padding-left: 10px;
+    }
+
+    .box img {
+        padding-right: 15px;
+    }
+
+    .footer-nav,
+    .social-links {
+        float: none;
+        text-align: center;
+    }
+
+    input[type=submit] {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+}
+
+@media screen and (max-width: 376px) {
+    body {
+        font-size: 14px !important;
+    }
+
+    .section-cities {
+        padding-bottom: 0%;
+        margin-bottom: -10rem;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .section-cities {
+        bottom: 0%;
+        margin-bottom: -20rem;
+    }
+
+    .btn-app img {
+        height: 80px;
+        width: auto;
+        margin-left: 50px;
+    }
+
+    .btn-app {
+
+        padding-left: 5px;
+        text-align: center;
+    }
+
+}
