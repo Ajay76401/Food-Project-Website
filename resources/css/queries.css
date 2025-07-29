@@ -137,6 +137,11 @@
     .main-nav {
         display: none;
     }
+      .hamburger-button {
+         display: block;
+         /* Show hamburger button */
+     }
+     
 
 }
 

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="vendor/css/normalize.css">
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="resources/css/queries.css">
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -18,13 +18,29 @@
 
         <nav>
             <div class="row">
-                <img class="logo clear-fix" src="resources/img/logo.png" alt="">
-                <ul class="main-nav clear-fix">
-                    <li class="nav-right"><a href="#section-plans"> Food Delivery</a></li>
-                    <li class="nav-right"> <a href="#section-steps"> How it Works</a></li>
-                    <li class="nav-right"> <a href="#section-cities"> Our Cites</a></li>
-                    <li class="nav-right"> <a href="#section-form"> sign -Up</a></li>
-                </ul>
+                <div class="ajay">
+                    <img class="logo clear-fix" src="resources/img/logo.png" alt="">
+
+                    <button id="hamburger-button" class="hamburger-button" aria-label="Toggle navigation menu"
+                        aria-expanded="false">
+                        &#9776; <!-- Unicode for hamburger icon -->
+                    </button>
+
+                    <ul class="main-nav clear-fix">
+                        <li class="nav-right"><a href="#section-plans"> Food Delivery</a></li>
+                        <li class="nav-right"> <a href="#section-steps"> How it Works</a></li>
+                        <li class="nav-right"> <a href="#section-cities"> Our Cites</a></li>
+                        <li class="nav-right"> <a href="#section-form"> sign -Up</a></li>
+                    </ul>
+
+                    <div id="mobile-nav-link" s class="nav-links-mobile">
+                        <!-- IMPORTANT: Replace these links with your actual website navigation links -->
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
             </div>
         </nav>
         <div class="hero-text-box">
@@ -125,8 +141,8 @@
 
         </div>
         <div class="row">
-            <div  class="col span_1_of_2 steps-box" data-aos="slide-right" data-aos-duration="500">
-                <img  src="resources/img/phone.png" alt="phone-image" class="app-screen">
+            <div class="col span_1_of_2 steps-box" data-aos="slide-right" data-aos-duration="500">
+                <img src="resources/img/phone.png" alt="phone-image" class="app-screen">
 
             </div>
             <div class="col span_1_of_2 steps-box" data-aos="slide-left" data-aos-duration="500">
@@ -156,8 +172,8 @@
             <h2> We're are currenty in this cities </h2>
         </div>
         <div class="row">
-            <div class="col span_1_of_4 box" >
-                <img   src="resources/img/london.jpg" alt="london" data-aos="slide-up" data-aos-duration="800">
+            <div class="col span_1_of_4 box">
+                <img src="resources/img/london.jpg" alt="london" data-aos="slide-up" data-aos-duration="800">
                 <h3>london</h3>
                 <div class="city-features">
                     <ion-icon class="icon-small" name="person-circle-outline"></ion-icon>1600+ Happy Eater
@@ -271,7 +287,7 @@
             </div>
 
             <div class="col span_1_of_3">
-                <div class="plan-box" >
+                <div class="plan-box">
                     <div class="plan-box-div" data-aos="zoom-in-up" data-aos-duration="1500">
                         <h3>PRO</h3>
                         <p class="plan-price">$199 <span>/ Month</span></p>
@@ -293,7 +309,7 @@
             </div>
 
             <div class="col span_1_of_3">
-                <div class="plan-box" >
+                <div class="plan-box">
                     <div class="plan-box-div" data-aos="zoom-in-up" data-aos-duration="1500">
                         <h3>STRATER</h3>
                         <p class="plan-price">$19 <span>/ Meal</span></p>
@@ -421,11 +437,25 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="vendor/js/jquery.js"></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+        AOS.init();
+    </script>
+    <script>
+
+        const hamburgerButton = document.getElementById("hamburger-button");
+        const mobileNavLinks = document.getElementById("mobile-nav-link");
+
+        hamburgerButton.addEventListener('click', () => {
+
+            mobileNavLinks.classList.toggle('active');
+
+            // Update aria-expanded for accessibility
+            const isExpanded = mobileNavLinks.classList.contains('active') ? 'true' : 'false';
+            hamburgerButton.setAttribute('aria-expanded', isExpanded);
+        });
+
+
         $(document).ready(function () {
             // Add smooth scrolling to all links
             $("a").on('click', function (event) {
