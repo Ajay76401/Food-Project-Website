@@ -10,10 +10,11 @@ body {
     color: black;
     font-family: cursive;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     text-rendering: optimizeLegibility;
     /* learn in detail later */
     overflow-x: hidden;
+    font-family: Poppins,Montserrat;
 
 }
 
@@ -104,7 +105,7 @@ h1 {
     margin-bottom: 40px;
     color: #fff;
     font-size: 240%;
-    font-weight: 300;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 3px;
@@ -119,6 +120,7 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
+
 .btn:link,
 input[type=submit],
 .btn:visited {
@@ -126,7 +128,7 @@ input[type=submit],
     padding: 10px 30px;
     width: 12rem;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 22px;
     transition: background-color 0.5s, color 0.5s, border 0.5s;
     text-align: center;
     vertical-align: middle;
@@ -253,7 +255,7 @@ h2:after {
     width: 75%;
     margin-left: 15%;
     text-align: justify;
-    font-weight: 100;
+    font-weight: 300;
 
 
 }
@@ -279,7 +281,7 @@ h3 {
 .box p {
     font-size: 90%;
     text-align: justify;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 145%;
     padding-bottom: 50px;
 }
